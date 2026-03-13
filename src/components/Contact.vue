@@ -7,8 +7,8 @@
         </h2>
         <h3 class="text-center text-3xl mb-2">Something special</h3>
         <p class="text-center text-gray-600 mb-8">
-          rinoakusa@gmail.com<br />
-          +880144 645 684
+          rikonusapratama@gmail.com<br />
+          +62 878-0964-9967
         </p>
         
         <form class="space-y-4 mb-8" @submit.prevent="handleSubmit">
@@ -62,15 +62,13 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-vue-next'
+import { Instagram, Linkedin } from 'lucide-vue-next'
 
 export default defineComponent({
   name: 'Contact',
   components: {
-    Facebook,
     Instagram,
-    Linkedin,
-    Twitter
+    Linkedin
   },
   setup() {
     const formData = ref({

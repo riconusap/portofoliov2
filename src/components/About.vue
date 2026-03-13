@@ -17,15 +17,25 @@
         </div>
         
         <div class="flex-1 space-y-4">
-          <h3 class="text-2xl">I'm RIKO NUSA</h3>
+          <div class="flex gap-2">
+            <h3 class="text-2xl ">I'm</h3> <h3 class="text-2xl text-red-500">Riko Nusa Pratama</h3>
+          </div>
           <p class="text-gray-600 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            I am a Senior Frontend Developer focused on building scalable, user-centered
+            web applications with Vue.js and TypeScript. Over the last four years, I have
+            delivered digital products across full-stack workflows, especially in public
+            service and government platforms.
           </p>
           <p class="text-gray-600 leading-relaxed">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            I started my professional journey at Sagara Technology, then continued my
+            growth at PT Kabayan Aishwarya Nusantara. My experience spans frontend
+            architecture, migration projects, and collaboration with cross-functional teams
+            to deliver reliable and maintainable systems.
           </p>
           <p class="text-gray-600 leading-relaxed">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+            I hold a Bachelor's degree in Information Systems from Gunadarma University
+            (2017 - 2021), and I continue to sharpen both engineering and UI/UX skills to
+            bridge technical quality with great product experience.
           </p>
         </div>
       </div>

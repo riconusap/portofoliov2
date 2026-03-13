@@ -117,44 +117,7 @@ export default defineComponent({
     ChevronRight
   },
   setup() {
-    const testimonials = ref<Testimonial[]>([
-      {
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        author: 'John Doe',
-        role: 'CEO, Company Inc.',
-        featured: false,
-      },
-      {
-        text: 'Outstanding work! The attention to detail and creativity exceeded all our expectations. Highly recommended for any project.',
-        author: 'Sarah Smith',
-        role: 'Marketing Director',
-        featured: false,
-      },
-      {
-        text: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        author: 'Mike Johnson',
-        role: 'Product Manager',
-        featured: false,
-      },
-      {
-        text: 'Professional, creative, and always delivers on time. A pleasure to work with on every project.',
-        author: 'Emma Wilson',
-        role: 'Creative Director',
-        featured: false,
-      },
-      {
-        text: 'The quality of work is exceptional. Highly skilled and very responsive to feedback.',
-        author: 'David Brown',
-        role: 'Founder, StartupXYZ',
-        featured: false,
-      },
-      {
-        text: 'Incredible talent and dedication. Transformed our vision into reality perfectly.',
-        author: 'Lisa Chen',
-        role: 'Brand Manager',
-        featured: false,
-      },
-    ])
+    const testimonials = ref<Testimonial[]>([])
 
     // Responsive items per view
     const itemsPerView = ref(3)

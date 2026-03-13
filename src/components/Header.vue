@@ -2,7 +2,7 @@
   <header class="fixed top-0 left-0 right-0 bg-white z-50 border-b">
     <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
       <div class="text-xl cursor-pointer" @click="$router.push('/')">
-        <span class="text-red-500">◆</span>RIKONUSA.
+        <img src="@/assets/img/logo.png" alt="">
       </div>
 
       <ul class="hidden md:flex items-center gap-8">
@@ -106,6 +106,7 @@ import { defineComponent, ref, computed } from "vue";
 import { useRoute } from "vue-router";
 import { Menu } from "lucide-vue-next";
 import { useScrollObserver } from "@/composables/useScrollObserver";
+import heroGif from '@/assets/img/hero.gif'
 
 export default defineComponent({
   name: "Header",
@@ -122,7 +123,8 @@ export default defineComponent({
     return {
       activeSection,
       isMenuOpen,
-      isProjectPage
+      isProjectPage,
+      heroGif
     };
   },
 });

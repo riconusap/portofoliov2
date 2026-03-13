@@ -48,24 +48,17 @@ export default defineComponent({
   setup() {
     const experiences = [
       {
-        title: 'Lead Photographer at Studio',
-        company: 'Creative Studio Ltd.',
-        period: '2021 - Present',
-        description: 'Leading photography projects and managing a team of creative professionals.',
-        current: false,
+        title: 'Frontend Developer',
+        company: 'PT Kabayan Aishwarya Nusantara, Bandung',
+        period: 'March 2022 - Present',
+        description: 'Developing and leading frontend implementation for government application projects using Vue and TypeScript.',
+        current: true,
       },
       {
-        title: 'Senior Designer at Agency',
-        company: 'Design Agency Inc.',
-        period: '2019 - 2021',
-        description: 'Created visual content for major brands and handled client relationships.',
-        current: false,
-      },
-      {
-        title: 'Junior Freelance UI/UX',
-        company: 'Various Clients',
-        period: '2017 - 2019',
-        description: 'Worked on diverse projects improving user experience and interface design.',
+        title: 'Fullstack Developer Specialist (Intern)',
+        company: 'Sagara Technology, Jakarta',
+        period: 'August 2021 - October 2021',
+        description: 'Contributed to full-stack development tasks with a focus on building product features and backend integration.',
         current: false,
       },
     ]

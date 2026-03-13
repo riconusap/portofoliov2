@@ -36,16 +36,16 @@ export default defineComponent({
   components: {},
   setup() {
     const skills = [
-      { icon: 'devicon-vuejs-plain', title: 'Vue', color: 'bg-white' },
-      { icon: 'devicon-react-original', title: 'React', color: 'bg-white' },
-      { icon: 'devicon-flutter-plain', title: 'Flutter', color: 'bg-white' },
-      { icon: 'devicon-typescript-plain', title: 'TypeScript', color: 'bg-white' },
       { icon: 'devicon-javascript-plain', title: 'JavaScript', color: 'bg-white' },
+      { icon: 'devicon-css3-plain', title: 'CSS', color: 'bg-white' },
+      { icon: 'devicon-nodejs-plain', title: 'Node.js', color: 'bg-white' },
+      { icon: 'devicon-git-plain', title: 'Git', color: 'bg-white' },
+      { icon: 'devicon-typescript-plain', title: 'TypeScript', color: 'bg-white' },
+      { icon: 'devicon-figma-plain', title: 'UI/UX Design', color: 'bg-white' },
       { icon: 'devicon-php-plain', title: 'PHP', color: 'bg-white' },
       { icon: 'devicon-laravel-plain', title: 'Laravel', color: 'bg-white' },
       { icon: 'devicon-postgresql-plain', title: 'PostgreSQL', color: 'bg-white' },
       { icon: 'devicon-mysql-plain', title: 'MySQL', color: 'bg-white' },
-      { icon: 'devicon-figma-plain', title: 'Figma', color: 'bg-white' },
     ]
 
     return {

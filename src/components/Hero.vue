@@ -4,15 +4,18 @@
       <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
         <div class="flex-1 space-y-6">
           <h1 class="text-5xl lg:text-6xl">
-            Hello I'am <span class="text-red-500">RIKO NUSA</span>
+            Hello I'm <span class="text-red-500">RIKO NUSA</span>
             <br />
-            <span class="text-red-500">Frontend Dev</span>
+            <span class="text-red-500">Sr. Developer</span>
             <br />
-            Based in <span>Indonesia.</span>
+            Based in <span>Bandung, Indonesia.</span>
           </h1>
           
           <p class="text-gray-600 max-w-xl">
-            Hey, I'm Riko. I've been a frontend developer for about four years, spending most of my time working with Vue.js and TypeScript. But I'm not just a frontend guy; I'm also really comfortable on the backend, especially when it comes to building with Laravel and working with PostgreSQL and MySQL. This means I have a solid full-stack view and can really get the whole picture of a project.
+            Senior Frontend Developer with 4 years of experience in Vue.js and TypeScript.
+            Strong full-stack skills with VueTS, Laravel, PostgreSQL, and MySQL.
+            Started as a full-stack developer on the SIMPEG RS project and now leads
+            government application development projects.
           </p>
           
           <div class="flex flex-col md:flex-row items-start gap-4">
@@ -52,15 +55,13 @@
 import { defineComponent } from 'vue'
 import heroGif from '@/assets/img/hero.gif'
 import cvPdf from '@/assets/pdf/cv.pdf'
-import { Facebook, Instagram, Linkedin, Twitter, Download } from 'lucide-vue-next'
+import { Instagram, Linkedin, Download } from 'lucide-vue-next'
 
 export default defineComponent({
   name: 'Hero',
   components: {
-    Facebook,
     Instagram,
     Linkedin,
-    Twitter,
     Download
   },
   setup() {
