@@ -22,7 +22,7 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior(to, _from, savedPosition) {
     // Jika tombol back/forward, gunakan posisi tersimpan
     if (savedPosition) {
       return savedPosition

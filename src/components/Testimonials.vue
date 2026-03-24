@@ -163,7 +163,7 @@ export default defineComponent({
       maxIndex,
       totalPages,
       currentPage,
-      itemsPerView: carouselItemsPerView,
+      carouselItemsPerView,
       cardWidthClass,
       next,
       prev,

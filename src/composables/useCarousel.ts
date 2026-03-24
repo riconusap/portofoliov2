@@ -1,11 +1,3 @@
-import { ref, computed, onMounted, onUnmounted } from 'vue'
-
-interface CarouselOptions {
-  itemsPerView?: number
-  autoplayDelay?: number
-  loop?: boolean
-}
-
 import { ref, computed, onMounted, onUnmounted, type Ref } from 'vue'
 
 export function useCarousel<T>(

@@ -10,17 +10,14 @@
           v-for="(skill, index) in skills"
           :key="index"
           :class="[
-            skill.color, 
-            skill.textColor || 'text-black', 
+              skill.color,
+              'text-black',
             'p-6 border-2 border-black flex flex-col items-center justify-center gap-3',
             'hover:bg-red-500 hover:text-white hover:border-red-500 hover:scale-105 hover:-translate-y-1',
             'transition-all duration-300 cursor-pointer group'
           ]"
         >
-          <span v-if="typeof skill.icon === 'string'">
             <i :class="skill.icon + ' text-[32px] group-hover:scale-110 transition-transform duration-300'" />
-          </span>
-          <component v-else :is="skill.icon" :size="32" class="group-hover:scale-110 transition-transform duration-300" />
           <span class="text-center text-sm font-medium">{{ skill.title }}</span>
         </div>
       </div>
