@@ -2,7 +2,8 @@
 FROM node:23.10.0-alpine AS build-stage
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN npm install --include=optional \
+	&& npm install --no-save @rollup/rollup-linux-x64-musl
 COPY . .
 RUN npm run build
 
