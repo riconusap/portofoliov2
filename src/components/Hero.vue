@@ -53,8 +53,6 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import heroGif from '@/assets/img/hero.gif'
-import cvPdf from '@/assets/pdf/cv.pdf'
 import { Instagram, Linkedin, Download } from 'lucide-vue-next'
 
 export default defineComponent({
@@ -65,8 +63,11 @@ export default defineComponent({
     Download
   },
   setup() {
+    const heroGif = new URL('../assets/img/hero.gif', import.meta.url).href
+    const cvPdf = new URL('../assets/pdf/cv.pdf', import.meta.url).href
+
     const downloadCv = () => {
-      const url = cvPdf as string
+      const url = cvPdf
       const filename = 'Riko-Nusa-CV.pdf'
       const link = document.createElement('a')
       link.href = url

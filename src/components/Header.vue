@@ -106,7 +106,6 @@ import { defineComponent, ref, computed } from "vue";
 import { useRoute } from "vue-router";
 import { Menu } from "lucide-vue-next";
 import { useScrollObserver } from "@/composables/useScrollObserver";
-import heroGif from '@/assets/img/hero.gif'
 
 export default defineComponent({
   name: "Header",
@@ -124,7 +123,6 @@ export default defineComponent({
       activeSection,
       isMenuOpen,
       isProjectPage,
-      heroGif
     };
   },
 });
