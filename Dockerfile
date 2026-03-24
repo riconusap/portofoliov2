@@ -1,5 +1,5 @@
 # Stage 1: Build Vue App
-FROM node:18-alpine AS build-stage
+FROM node:23.10.0-alpine AS build-stage
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci
