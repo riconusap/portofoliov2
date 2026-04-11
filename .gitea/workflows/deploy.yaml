@@ -1,0 +1,15 @@
+- name: Send Notification
+        uses: appleboy/telegram-action@master
+        if: always() # Biar tetep ngirim notif mau sukses atau gagal
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            🚀 *Deployment Report - Noosa Server*
+            
+            Project: ${{ github.repository }}
+            Status: ${{ job.status == 'success' && '✅ SUCCESS' || '❌ FAILED' }}
+            Commit: ${{ github.sha }}
+            Pusher: ${{ github.actor }}
+            
+            Lihat Detail: ${{ github.server_url }}/${{ github.repository }}/actions
