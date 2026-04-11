@@ -1,5 +1,5 @@
 name: Noosa First Automation
-on: [push]
+on: [push, mirror_update]
 
 jobs:
   hello-world:
