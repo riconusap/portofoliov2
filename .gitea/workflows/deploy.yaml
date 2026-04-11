@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Greet Riko
         run: |
-          echo "Halo System Analyst Riko!"
+          echo "Halo Riko!"
           echo "Server Noosa lagi nge-build project kamu secara otomatis nih."
 
       - name: Check Environment
