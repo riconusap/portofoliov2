@@ -1,5 +1,5 @@
 name: Noosa First Automation
-on: [push, mirror_update]
+on: [push, mirror_update, workflow_dispatch]
 
 jobs:
   hello-world:
@@ -9,11 +9,6 @@ jobs:
         run: |
           echo "Halo Riko!"
           echo "Server Noosa lagi nge-build project kamu secara otomatis nih."
-
-      - name: Check Environment
-        run: |
-          docker --version
-          node -v
 
       - name: Send Notification
         uses: appleboy/telegram-action@master
@@ -27,6 +22,5 @@ jobs:
             Project: ${{ github.repository }}
             Status: ${{ job.status == 'success' && '✅ SUCCESS' || '❌ FAILED' }}
             Commit: ${{ github.sha }}
-            Pusher: ${{ github.actor }}
             
-            Lihat Detailnya disini: ${{ github.server_url }}/${{ github.repository }}/actions
+            Gimana Riko? Aman ya!
