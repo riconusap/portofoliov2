@@ -12,4 +12,4 @@
             Commit: ${{ github.sha }}
             Pusher: ${{ github.actor }}
             
-            Lihat Detail: ${{ github.server_url }}/${{ github.repository }}/actions
+            Lihat Detailnya disini: ${{ github.server_url }}/${{ github.repository }}/actions
