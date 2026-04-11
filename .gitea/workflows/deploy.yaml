@@ -1,14 +1,18 @@
-name: Noosa First Automation
+name: Deploy Portofolio
 on: [push, mirror_update, workflow_dispatch]
 
 jobs:
-  hello-world:
+  deploy-noosa:
     runs-on: ubuntu-latest
     steps:
-      - name: Greet Riko
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build and Deploy
         run: |
-          echo "Halo Riko!"
-          echo "Server Noosa lagi nge-build project kamu secara otomatis nih."
+          # Perintah ini bakal jalan di server Noosa kamu
+          docker compose down
+          docker compose up -d --build
 
       - name: Send Notification
         uses: appleboy/telegram-action@master
@@ -17,10 +21,6 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            🚀 *Deployment Report - Noosa Server*
-            
-            Project: ${{ github.repository }}
+            🚀 *Deployment Portofolio v2*
             Status: ${{ job.status == 'success' && '✅ SUCCESS' || '❌ FAILED' }}
-            Commit: ${{ github.sha }}
-            
-            Gimana Riko? Aman ya!
+            URL: rikonusa.cloud
