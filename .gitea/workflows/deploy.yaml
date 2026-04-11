@@ -19,6 +19,7 @@ jobs:
             # cd /DATA/AppData/gitea/data/gitea/repositories/riko/portofoliov2.git # Sesuaikan folder repo kamu di server
             # Atau kalau kamu sudah mirror ke folder tertentu:
             cd /home/riconusap/apps/portfolio 
+            git pull origin main
             docker compose down
             docker compose up -d --build
 
