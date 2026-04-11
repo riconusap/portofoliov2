@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  portofolio-web:
+    build: .
+    container_name: porto-riko
+    restart: always
+    ports:
+      - "5174:80"
