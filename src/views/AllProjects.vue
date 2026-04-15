@@ -14,7 +14,7 @@
                 <p class="text-sm text-gray-500 mb-2">Year: {{ project.year }}</p>
               </div>
               <div class="mt-auto">
-                <a :href="project.link || '#'" target="_blank" class="btn btn-primary">Visit Project</a>
+                <a :href="project.link || '#'" target="_blank" class="btn btn-primary">See Project</a>
               </div>
             </div>
           </div>
