@@ -27,7 +27,18 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
+          format: markdown
           message: |
-            🚀 *Deployment Portofolio v2*
-            Status: ${{ job.status == 'success' && 'SUCCESS' || 'FAILED' }}
-            URL: rikonusa.cloud
+            ${{ job.status == 'success' && '✅ *DEPLOYMENT SUCCESS*' || '❌ *DEPLOYMENT FAILED*' }}
+            
+            *Project:* `${{ github.repository }}`
+            *Branch:* `${{ github.ref_name }}`
+            *Server:* `Noosa Pentium N3700`
+            
+            ---
+            *Commit Info:*
+            `"${{ github.event.head_commit.message }}"`
+            _by ${{ github.actor }}_
+            
+            *Link:* [rikonusa.cloud](https://rikonusa.cloud)
+            *Action Logs:* [View Detail](${{ github.server_url }}/${{ github.repository }}/actions)
